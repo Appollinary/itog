@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Academy — Каталог курсов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <h1 class="logo">IT Academy</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#catalog">Курсы</a></li>
+                <li><a href="#table">Программа</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section id="catalog" class="section">
+    <h2 class="section-title">Каталог курсов</h2>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="Frontend">Frontend</button>
+        <button class="filter-btn" data-filter="Backend">Backend</button>
+    </div>
+
+    <div class="cards" id="cards"></div>
+</section>
+
+<section id="table" class="section light">
+    <h2 class="section-title">Учебная программа</h2>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Курс</th>
+                    <th>Направление</th>
+                    <th>Уровень</th>
+                    <th>Длительность</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 IT Academy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
